@@ -1,0 +1,441 @@
+/* CSS Reset */
+* {
+    margin: 0vw;
+    padding: 0vw;
+    font-size: 1.3vw;
+    font-family: "Delius", serif;
+    font-weight: 800;
+    width:inherit;
+    height: fit-content;
+}
+body {
+    background-color: rgb(248, 248, 250);
+}
+h1 , h2 , h3 , h4 , h6{
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+/* logo and images */
+#logo {
+    filter: invert(90%);
+}
+#logo img {
+    margin: 10px 34px;
+    width: 6rem;
+    border-radius: 50%;
+    position: relative;
+    TOP:1px;
+    left: 1px;
+}
+
+/* list styling */
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#navbar ul li {
+    list-style-type: none;
+    font-size: rem;
+}
+#navbar ul li a {
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    position: relative;
+    z-index: 1;
+    font-size: 1.7rem;
+}
+#navbar ul li a:hover {
+    padding: .2em;
+    border: 2px solid black;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+#navbar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(23, 23, 23, 0.363);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 5rem;
+}
+#navbar::before {
+    content: "";
+    background-color: rgb(23, 23, 23);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.4;
+    top: 0px;
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 3.2rem;
+    background-color: rgba(240, 248, 255, 0.222);
+    height: 30rem;
+}
+#home::before {
+    content: "";
+    background: url('https://news.mit.edu/sites/default/files/images/202312/MIT_Food-Diabetes-01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    height: 35rem;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.7;
+}
+#home p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 2rem;
+    position: relative;
+    top: 3.2rem;
+}
+
+/* Utility classes */
+#home .h-primary {
+    position: relative;
+    top: 3.2rem;
+    font-size: 3.2rem;
+    text-align: center;
+}
+.h-secondary {
+    font-size: 2rem;
+    text-align: center;
+    width: 600px;
+}
+.btn {
+    padding: 2px 10px;
+    border: 2px solid rgb(3, 3, 3);
+    /* margin: 17px 6px; */
+    background-color: rgba(23, 23, 23, 0.363);
+    color: rgb(0, 0, 0);
+    border-radius: .5rem;
+    position: relative;
+    top: 3.5rem;
+    width: fit-content;
+    font-size: 2rem;
+}
+.btn:hover {
+    padding: 6px 19px;
+    border: 2px solid rgb(23, 23, 23);
+    margin: 17px 6px;
+    background-color: aliceblue;
+    color: rgb(23, 23, 23);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.center {
+    text-align: center;
+}
+
+/* client services */
+#client-container .h-primary {
+    
+    font-size: 3.2rem;
+    text-align: center;
+}
+#client-container {
+    position: relative;
+    top: 40rem;  
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    height: fit-content;
+}
+#client-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+#client-section .Client-services {
+    width: 21rem;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.326);
+    border-radius: .5rem;
+}
+#client-section .Client-services h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: .5rem;
+}
+#client-section .Client-services p{
+    text-align: center;
+    font-size: 2rem;
+}
+#client-section .Client-services img {
+    border-radius: 1rem;
+    display: block;
+    width:9rem;
+    height: 5rem;
+    margin: auto;
+}
+
+#product-containers {
+    position: relative;
+    /* top: 55rem; */
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    top: 45.2rem;
+    margin-bottom: 2px;
+}
+#product-containers .h-primary{
+    font-size: 3.2rem;
+}
+#product-containers div li{
+    font-size: 1.5rem;
+}
+#product-containers div P{
+    font-size: 1.8rem;
+}
+.Healthy-Diet {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    align-items: center;
+    /* animation: scroll 30s linear   infinite; */
+
+    /* animation-timing-fun stepction: ; */
+    /* animation-delay: 0ms; */
+    /* animation: name dur stepation timing-function delay iteration-count direction fill-mode; */
+    /* animation-fill-mode:forwards; */
+    /* nimation-timing-function: step-end; */
+    /* overflow-x: scroll; */
+}
+.Healthy-Diet div {
+    padding: 1.4%;
+    text-align: center;
+}
+.Healthy-Diet img {
+    height: 6rem;
+    width: 12.5rem;
+}
+.Healthy-Diet div {
+    height: 13rem;
+    background-color: rgba(0, 0, 0, 0.32);
+}
+.Healthy-Diet div h6 {
+    writing-mode: vertical-rl;
+    /* For vertical text */
+    transform: rotate(180deg);
+    /* Rotate to make it read from bottom to top */
+    padding: 10%;
+    /* font:  */
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    /* height:3.2rem ; */
+    position: relative;
+    margin: auto;
+    display: block;
+    height: 100%;
+}
+marquee {
+    width: 100%;
+    position: relative;
+    left: 0px;
+    right: 0px;
+}
+
+
+/* Food-Order */
+#Food-Order {
+    height: fit-content;
+    /* background-color: aqua; */
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    margin: 0px;
+    top: 62rem;
+    /* border: 20px solid pink; */
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#Food-Order::before {
+    content: "";
+    /* background: url('https://tse1.mm.bing.net/th?id=OIP.-ltwV7wC3cf0a0cu5v5j-gHaCx&pid=Api&P=0&h=180'); */
+
+    background: url('https://promova.com/_next/image?url=https:%2F%2Fpromova.com%2Fcontent%2Fordering_at_a_restaurant_7b0ba275f7.png&w=3840&q=75');
+    filter: grayscale(80%);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 40rem;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.7;
+    background-color: rgb(1, 14, 14);
+}
+#Food-Order{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    top:45rem;
+    /* border: 2px solid yellow; */
+}
+#Food-Order .form-box {
+    padding: 2rem;
+    text-align: center;
+    height:fit-content;
+}
+#Food-Order h3 {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 2.5rem;
+    flex-shrink: 0;
+    position: relative;
+    padding: 2rem;
+
+}
+#Food-Order input ,select{
+    font-size: 1rem;
+    padding: 0.2rem;
+    margin: .2rem;
+    width: 12rem;
+}
+#Food-Order hr {
+    height: 80%;
+    border-color: rgb(124, 103, 131);
+    background-color: rgba(255, 255, 255, 0);
+    border-style: dashed;
+}
+
+/* footer */
+#footer {
+    height: fit-content;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    margin: 0px;
+    top: 50.2rem;
+    
+}
+#footer::before {
+    content: "";
+    /* background: url('https://tse1.mm.bing.net/th?id=OIP.-ltwV7wC3cf0a0cu5v5j-gHaCx&pid=Api&P=0&h=180'); */
+
+    background: url('https://st2.depositphotos.com/1001069/7089/i/450/depositphotos_70894431-stock-photo-citrus-fruits-tape-measure-and.jpg');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100% 500%;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.7;
+}
+#footer p{
+    text-align: center;
+    padding: .5rem;
+    font-size: 2rem;
+}
+#footer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footer form input[type="textarea"]{
+    width: 15rem;
+    height: 6rem;
+    text-align: center;
+    margin: 1rem;
+}
+#footer form input[type="submit"] , #footer form input[type="reset"]{
+    width: 7rem;
+    margin: 1rem;
+}
+
+/* #services-container::before {
+    content: '';
+    background: url('https://www.hotstats.com/hubfs/hotel_restaurant_waiter-1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0;
+}
+
+#services-container {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+}
+
+.h-primary img {
+    width: 200px;
+}
+
+.services .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: last baseline;
+    align-items: center;
+    border-radius: 0%;
+    margin: 3px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.208);
+}
+
+.services .box img {
+    width: 100px;
+}
+
+.services .box select {
+    width: 450px;
+    padding: 2%;
+}
+
+.services .box select :nth-child(even) {
+    background-color: rgb(91, 90, 90);
+} */
